@@ -1,4 +1,4 @@
-.container {
+.head-container {
   background-color: #3367d6;
   display: flex;
   padding: 20px;
@@ -15,11 +15,23 @@
   padding-left: 8px;
   padding-bottom: 4px;
   padding-right: 8px;
-  margin-left: 35%;
+  margin-left: 25%;
+}
+.search-logo {
+  background-color: #2850a7;
+  border-color: #6697ff;
+  border-width: 1px 0px 1px 1px;
+  border-style: solid;
+  padding: 7.9px 19px 7px 19px;
 }
 .search-input {
   background-color: #2850a7;
   font-family: 'Roboto';
-  width: 100%;
+  font-size: 16px;
+  width: 600px;
   height: 40px;
+  border-color: #6697ff;
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 10px;
 }

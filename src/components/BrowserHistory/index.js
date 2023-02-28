@@ -1,5 +1,7 @@
 import {Component} from 'react'
 
+import HistoryList from '../HistoryList'
+
 import './index.css'
 
 const initialHistoryList = [
@@ -78,9 +80,26 @@ const initialHistoryList = [
 ]
 
 class BrowserHistory extends Component {
+  state = {
+    browserHistoryList: initialHistoryList,
+  }
+
+  deleteTodo = id => {
+    const {browserHistoryList} = this.state
+    const updatedHistoryList = browserHistoryList.filter(
+      eachTodo => eachTodo.id !== id,
+    )
+
+    this.setState({
+      browserHistoryList: updatedHistoryList,
+    })
+  }
+
   render() {
+    const {browserHistoryList} = this.state
+
     return (
-      <div className="container">
+      <div className="head-container">
         <img
           src="https://assets.ccbp.in/frontend/react-js/history-website-logo-img.png"
           alt="logo"

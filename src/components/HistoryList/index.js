@@ -1,21 +1,21 @@
 import './index.css'
 
 const HistoryList = props => {
-  const {listItems, deleteTodo} = props
+  const {listItems, deleteList} = props
   const {id, timeAccessed, logoUrl, title, domainUrl} = listItems
 
-  const onDeleteTodo = () => {
-    deleteTodo(id)
+  const onDeleteList = () => {
+    deleteList(id)
   }
 
   return (
-    <li className="todo-item">
+    <li className="list-item">
       <p className="title">{(timeAccessed, logoUrl, title, domainUrl)}</p>
       <button
         alt="delete"
         type="button"
         className="delete-btn"
-        onClick={onDeleteTodo}
+        onClick={onDeleteList}
       >
         <img src="https://assets.ccbp.in/frontend/react-js/delete-img.png" />
       </button>
