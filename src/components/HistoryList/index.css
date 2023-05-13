@@ -1,0 +1,33 @@
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+  height: 8.5vh;
+}
+.item-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 80%;
+}
+.app-logo {
+  width: 40px;
+  align-self: center;
+  padding-right: 10px;
+}
+.title {
+  font-family: 'Roboto';
+  font-weight: 600;
+  align-self: center;
+  padding-right: 10px;
+}
+.url {
+  font-family: 'Roboto';
+  align-self: center;
+}
+.delete-btn {
+  border-width: 0px;
+  background-color: #fff;
+  align-self: center;
+}
